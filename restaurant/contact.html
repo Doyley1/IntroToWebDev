@@ -1,0 +1,91 @@
+<!--
+    Name: James Doyle
+    Date Created: 15/10/2020 
+    Most recent revision: 15/10/2020
+-->
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> 
+        <header>
+            <title>Contact Us</title>	
+        </header>
+    </head> 
+    <main>
+        <body>
+            <h1 style="text-align:center;">Zino's Italiano</h1>
+            <nav>
+                <hr />
+                <p><a href="index.html">Home</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <hr />
+            </nav>
+            <form action="submit.html" method="POST"></form>
+
+            <label for="name">Name:</label> 
+            <br />
+            <input type="text" id="name" name="name"> 
+            <br />
+            <label for="email">Email:</label>
+            <br />
+            <input type="text" id="email" name="email"> 
+            <br />
+            <label for="phone">Phone:</label>
+            <br />
+            <input type="text" id="phone" name="phone"> 
+            <br />
+            <label for="contact">Reason for Inquiry:</label>
+            <br />
+            <select id="contact" name="contact">
+                <option value="default" selected>--Select One--</option>
+                <option value="booking">Book a Table</option>
+                <option value="catering">Catering</option>
+                <option value="supplier">Supplier</option>
+            </select>
+
+            <br />
+            <label for="info">Additional Information</label>
+            <br />
+            <textarea id="info" name="info"></textarea>
+
+            <fieldset>
+                <legend>Have you been to the restaurant?</legend>
+                <input type="radio" id="choice1" name="questionnaire" value="yes">
+                <label for="choice1">Yes</label>
+                <br />
+                <input type="radio" id="choice2" name="questionnaire" value="no">
+                <label for="choice2">No</label>
+                <br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Best days to contact you:</legend>
+                
+                <input type="checkbox" id="monday" name="interest" value="monday">
+                <label for="monday">M</label>
+                
+                <input type="checkbox" id="tuesday" name="interest" value="tuesday">
+                <label for="tuesday">T</label>
+                
+                <input type="checkbox" id="wednesday" name="interest" value="wednesday">
+                <label for="wednesday">W</label>
+                
+                <input type="checkbox" id="thursday" name="interest" value="thursday">
+                <label for="thursday">Th</label>
+                
+                <input type="checkbox" id="friday" name="interest" value="friday">
+                <label for="friday">F</label>
+                <br />
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send Request">
+
+            <footer>
+                <hr />
+                <p style="text-align: center;">368 Ballards Lane Kingston London N12 7YT</p>
+                <p style="text-align: center;">02043567468</p>
+                <hr />
+            </footer>
+        </body> 
+    </main>
+</html>
