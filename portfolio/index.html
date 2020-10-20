@@ -6,129 +6,145 @@ Most recent revision: 20/10/2020
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <header>
-            <title>James Doyle's Portfolio</title>
-            <link href="styles/main.css" rel="stylesheet" type="text/css" />
-            <style>
-                caption {
-                    font-weight: bold;
-                    font-size: 1.2em;
-                    margin-bottom: 8px;
-                }
-                table, th, td {
-                    border: 1px solid #0d1f2d;
-                    border-collapse: collapse;
-                    padding: 5px 10px;
-                }
-                table {
-                    width: 90%;
-                    margin: auto;
-                }
-                tr {
-                    height: 30px;
-                }
-                th {
-                    background-color: #546a7b;
-                    color: #f2eded;
-                }
-                tr:nth-child(odd) {
-                    background-color: #e4c3ad;
-                }
-            </style>
-            <h1>Portfolio for James Doyle</h1>
-        </header>
+        <title>James Doyle's Portfolio</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <style>
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            table, th, td {
+                border: 1px solid #0d1f2d;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            table {
+                width: 90%;
+                margin: auto;
+            }
+            tr {
+                height: 30px;
+            }
+            th {
+                background-color: #546a7b;
+                color: #f2eded;
+            }
+            tr:nth-child(odd) {
+                background-color: #e4c3ad;
+            }
+            /* Creating article layouts */
+            article {
+                margin-bottom: 16px;
+            }
+            article img {
+                float:left;
+            }
+            .right-content {
+                float:left;
+            }
+        </style>
     </head>
-    <main>
-        <body>
-            
+    <body>
+        <main>
+            <header>
+                <h1>Portfolio for James Doyle</h1>
+            </header>
             <nav class="border">
                 
                 <p><a href="index.html">Home</a></p>
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
+                <div class="clear-float"></div>
                 
             </nav>
             <section>
                 <article class="border" id="about-me">
                     <h2><em>About Me</em></h2>
-                    <img src="images/profile.jpg" alt="Portrait of James Doyle" />
+                    <img src="images/profile.jpg" alt="Portrait of James Doyle" width="250"/>
                     <p>I am a 22 year old graduate from Nottingham Trent University with interests in machine learning, data analysis and web development. I have experience in various high level languages such as Python, C++, SQL and Java for applications like creating store systems and processing user data.</p>
                     <p>I first became interested in computing and technology from the age of 7 after having problems with a Windows 95 computer and watching an IT technician install Ubuntu and then use various terminal commands to navigate and create folders as well as fix the computer. This interest then escalated as I gained knowledge about hardware as well as software through an optional computer science course which allowed me to complete an AS level in it at GCSE level.</p>
+                    <div class="clear-float"></div>
                 </article>
                 <article id="past-experiences">
                     <h2><em>Past Experiences</em></h2>
-                    <img src="images/poker-chips.jpg" alt="Picture of poker chips" />
-                    <table>
-                        <caption>Employment History</caption>
-                        <thead>
+                    <img src="images/poker-chips.jpg" alt="Picture of poker chips" width="250"/>
+                    <div class="right-content">
+                        <table>
+                            <caption>Employment History</caption>
+                            <thead>
+                                    <tr>
+                                        <th>Years of Employment</th>
+                                        <th>Title</th>
+                                        <th>Company</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <th>Years of Employment</th>
-                                    <th>Title</th>
-                                    <th>Company</th>
+                                    <td>2016-Present</td>
+                                    <td>Student</td>
+                                    <td>Nottingham Trent University</td>
                                 </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2016-Present</td>
-                                <td>Student</td>
-                                <td>Nottingham Trent University</td>
-                            </tr>
-                            <tr>
-                                <td>2014-2016</td>
-                                <td>Student</td>
-                                <td>Esher College</td>
-                            </tr>
-                            <tr>
-                                <td>2013-2014</td>
-                                <td>Sales Assistant</td>
-                                <td>The Farmery Frozen Yoghurt</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <td>2014-2016</td>
+                                    <td>Student</td>
+                                    <td>Esher College</td>
+                                </tr>
+                                <tr>
+                                    <td>2013-2014</td>
+                                    <td>Sales Assistant</td>
+                                    <td>The Farmery Frozen Yoghurt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <p>As part of one of my modules at Nottingham Trent University, I was part of a team to create a PoS system for the university staff resources building, this included creating a mobile phone application to scan QR codes so that items could be easily added to a user's basket as well as easy admin visualisations with stock and profit graphs.</p>
                     <p>Also, due to my interest in poker, I created a joinable game of poker using Java so that my friends could play along with me without having to pay any rake, or commission, to any third party meaning we could play simply with additional features like running the rest of the cards even though everyone has folded.</p>
+                    <div class="clear-float"></div>
                 </article>
                 <article id="hobbies">
                     <h2><em>Hobbies</em></h2>
-                    <img src="images/stratocaster.jpg" alt="Picture of guitar" />
-                    <ul>
-                        <li>Bands</li>
-                        <ol>
-                            <li>Santana</li>
-                            <li>Biffy Clyro</li>
-                            <li>The Smiths</li>
-                        </ol>
-                        <li>Video Games</li>
-                        <ol>
-                            <li>League of Legends</li>
-                            <li>Assassin's Creed</li>
-                            <li>Kerbal Space Programs</li>
-                        </ol>
-                    </ul>
-                    <ul>
-                        <li>Sports</li>
+                    <img src="images/stratocaster.jpg" alt="Picture of guitar" width="250"/>
+                    <div class="right-content">
                         <ul>
-                            <li>Football</li>
-                            <li>Cricket</li>
-                            <li>Rugby</li>
+                            <li>Bands</li>
+                            <ol>
+                                <li>Santana</li>
+                                <li>Biffy Clyro</li>
+                                <li>The Smiths</li>
+                            </ol>
+                            <li>Video Games</li>
+                            <ol>
+                                <li>League of Legends</li>
+                                <li>Assassin's Creed</li>
+                                <li>Kerbal Space Program</li>
+                            </ol>
                         </ul>
-                        <li>Outdoor Activities</li>
                         <ul>
-                            <li>Playing football</li>   
-                            <li>Running</li>
-                            <li>Hiking</li>
+                            <li>Sports</li>
+                            <ul>
+                                <li>Football</li>
+                                <li>Cricket</li>
+                                <li>Rugby</li>
+                            </ul>
+                            <li>Outdoor Activities</li>
+                            <ul>
+                                <li>Playing football</li>   
+                                <li>Running</li>
+                                <li>Hiking</li>
+                            </ul>
                         </ul>
-                    </ul>
+                    </div>
                     <p>In addition to my interest in poker, I also play Guitar Hero at a semi professional level using a custom version of it that includes all the games and can be done on computer instead of consoles as the originals were. It also means that custom songs can be loaded as well as the ability for it to be streamed which I do via Discord to my friends.</p>
                     <p>From my interest in Guitar Hero, I discovered that I also wanted to play guitar and so found my dads old electric guitar in the attic and have been practicing and learning how to play for the past two years.</p>
+                    <div class="clear-float"></div>
                 </article>
             </section>
-            
-        </body>
-    </main>
+        </main>
+    </body>
+    
     <footer>
-        
         <p>&copy; 2020 James Doyle. All rights reserved.</p>
     </footer>
 </html>
