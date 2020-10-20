@@ -1,28 +1,35 @@
 <!--
 Name: James Doyle
 Date Created: 14/10/2020
-Most recent revision: 14/10/2020
+Most recent revision: 20/10/2020
 -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <header>
             <title>James Doyle's Portfolio</title>
+            <link href="teststyles.css" rel="stylesheet" type="text/css" />
+            <style>
+                header {
+                    background-color: darkgray;
+            }
+            </style>
+            <h1>Portfolio for James Doyle</h1>
         </header>
     </head>
     <main>
         <body>
-            <h1>Portfolio for James Doyle</h1>
-            <nav>
-                <hr /> 
+            
+            <nav class="border">
+                <hr style="border: thin dotted red;" /> 
                 <p><a href="">Home</a></p>
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
-                <hr />
+                <hr style="width: 50%; border: 2px solid blueviolet;" />
             </nav>
             <section>
-                <article id="about-me">
+                <article class="border" id="about-me">
                     <h2><em>About Me</em></h2>
                     <img src="images/profile.jpg" alt="Portrait of James Doyle" />
                     <p>I am a 22 year old graduate from Nottingham Trent University with interests in machine learning, data analysis and web development. I have experience in various high level languages such as Python, C++, SQL and Java for applications like creating store systems and processing user data.</p>
@@ -95,7 +102,7 @@ Most recent revision: 14/10/2020
             
         </body>
     </main>
-    <footer>
+    <footer style="background-color: fuchsia;">
         <hr />
         <p>&copy; 2020 James Doyle. All rights reserved.</p>
     </footer>
