@@ -8,11 +8,32 @@ Most recent revision: 20/10/2020
     <head>
         <header>
             <title>James Doyle's Portfolio</title>
-            <link href="teststyles.css" rel="stylesheet" type="text/css" />
+            <link href="styles/main.css" rel="stylesheet" type="text/css" />
             <style>
-                header {
-                    background-color: darkgray;
-            }
+                caption {
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    margin-bottom: 8px;
+                }
+                table, th, td {
+                    border: 1px solid #0d1f2d;
+                    border-collapse: collapse;
+                    padding: 5px 10px;
+                }
+                table {
+                    width: 90%;
+                    margin: auto;
+                }
+                tr {
+                    height: 30px;
+                }
+                th {
+                    background-color: #546a7b;
+                    color: #f2eded;
+                }
+                tr:nth-child(odd) {
+                    background-color: #e4c3ad;
+                }
             </style>
             <h1>Portfolio for James Doyle</h1>
         </header>
@@ -21,12 +42,12 @@ Most recent revision: 20/10/2020
         <body>
             
             <nav class="border">
-                <hr style="border: thin dotted red;" /> 
-                <p><a href="">Home</a></p>
+                
+                <p><a href="index.html">Home</a></p>
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
-                <hr style="width: 50%; border: 2px solid blueviolet;" />
+                
             </nav>
             <section>
                 <article class="border" id="about-me">
@@ -40,26 +61,30 @@ Most recent revision: 20/10/2020
                     <img src="images/poker-chips.jpg" alt="Picture of poker chips" />
                     <table>
                         <caption>Employment History</caption>
-                        <tr>
-                            <th>Years of Employment</th>
-                            <th>Title</th>
-                            <th>Company</th>
-                        </tr>
-                        <tr>
-                            <td>2016-Present</td>
-                            <td>Student</td>
-                            <td>Nottingham Trent University</td>
-                        </tr>
-                        <tr>
-                            <td>2014-2016</td>
-                            <td>Student</td>
-                            <td>Esher College</td>
-                        </tr>
-                        <tr>
-                            <td>2013-2014</td>
-                            <td>Sales Assistant</td>
-                            <td>The Farmery Frozen Yoghurt</td>
-                        </tr>
+                        <thead>
+                                <tr>
+                                    <th>Years of Employment</th>
+                                    <th>Title</th>
+                                    <th>Company</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2016-Present</td>
+                                <td>Student</td>
+                                <td>Nottingham Trent University</td>
+                            </tr>
+                            <tr>
+                                <td>2014-2016</td>
+                                <td>Student</td>
+                                <td>Esher College</td>
+                            </tr>
+                            <tr>
+                                <td>2013-2014</td>
+                                <td>Sales Assistant</td>
+                                <td>The Farmery Frozen Yoghurt</td>
+                            </tr>
+                        </tbody>
                     </table>
                     <p>As part of one of my modules at Nottingham Trent University, I was part of a team to create a PoS system for the university staff resources building, this included creating a mobile phone application to scan QR codes so that items could be easily added to a user's basket as well as easy admin visualisations with stock and profit graphs.</p>
                     <p>Also, due to my interest in poker, I created a joinable game of poker using Java so that my friends could play along with me without having to pay any rake, or commission, to any third party meaning we could play simply with additional features like running the rest of the cards even though everyone has folded.</p>
@@ -102,8 +127,8 @@ Most recent revision: 20/10/2020
             
         </body>
     </main>
-    <footer style="background-color: fuchsia;">
-        <hr />
+    <footer>
+        
         <p>&copy; 2020 James Doyle. All rights reserved.</p>
     </footer>
 </html>
