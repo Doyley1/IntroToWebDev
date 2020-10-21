@@ -1,0 +1,89 @@
+/*
+Creator: James Doyle
+Date created: 20/10/2020
+Date last modified: 20/10/2020
+*/
+
+/* Crosspage formatting */
+body {
+    background-color: hsl(64, 71%, 70%);
+    font-family: arial, helvetica, sans-serif;
+    color: #0d1f2d;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8%;
+    text-align: left;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightyellow;
+}
+
+footer {
+    background-color: lightyellow;
+}
+
+hr {
+    height: 2px;
+    background-color: grey;
+    border: none;
+}
+
+h1 {
+    text-align:center;
+    
+}
+
+/* Navigation formatting */
+nav {
+    background-color: lightyellow ;
+    
+}
+
+nav a {
+    background-color: #3d3f1d;
+    color: #ffffff;
+    padding: 7px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    width: 150px;
+    float: left;
+}
+nav a:visited {
+    color: #e4c3ad; 
+}
+nav a:hover {
+    background-color: #fef9ff;
+    color: #5b7d87; 
+    border: thin solid #0d1f2d;
+}
+nav a:active {
+    font-weight: bold;
+}
+
+.clear-float {
+    clear:both;
+}
+
+/* External Link formatting */
+.external-link:visited {
+    color: purple;
+}
+
+.external-link:hover {
+    font-weight: bold;
+}
+
+.external-link:active {
+    text-decoration: none;
+}
+
+.external-link {
+    color: red ;
+    text-decoration: underline;
+}
+

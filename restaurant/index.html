@@ -1,41 +1,93 @@
 <!--
 Name: James Doyle
 Date Created: 15/10/2020
-Most recent revision: 15/10/2020
+Most recent revision: 20/10/2020
 -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <header>
-            <title>Home Page</title>
-        </header>
+        <title>Home Page</title>
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            /* Page-specific formatting */
+            article {
+                margin-bottom: 16px;
+                margin-top: 7px;
+            }
+            
+            .right-content {
+                float:left;
+            }
+        </style>
     </head>
-    <main>
-        <body>
-            <h1 style="text-align:center;">Zino's Italiano</h1>
+    <body>
+        <main>
+            <!-- Header -->
+            <header>
+                <h1>Zino's Italiano</h1>
+            </header>
+            
             <nav>
-                <hr /> <!-- Navigation Pane-->
-                <p><a href="index.html">Home</a></p>
-                <p><a href="menu.html">Menu</a></p>
-                <p><a href="contact.html">Contact Us</a></p>
+                <!-- Navigation Pane-->
+                <hr />
+                <div class="row">
+                    <div class="col-lg-4 col-md">
+                        <p><a class="btn badge-pill" href="index.html">Home</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md">
+                        <p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md">
+                        <p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+                    </div>
+                    <div class="clear-float"></div>
+                </div>
                 <hr />
             </nav>
-            <img src="images/restaurant.jpg" alt="Picture of Zino's Italiano">
-            <h4>Restaurant Description</h4> <!-- Main body of text -->
-            <p>Zino Di Landro first opened for business in 1981, serving traditional Italian food and wine to an ever increasing and loyal clientele who knew him for his genuine warmth and friendly nature.
-                Today, Zino’s son, Daniel and his wife Martha continue to run the restaurant with the same spirit of conviviality that has made this a favourite destination for so many diners over the past thirty four years.
-                We try to concentrate on providing the best quality food and wine in a warm, friendly atmosphere, where our guests are treated just the way Franco would have liked. 
-                
-                Serving classic Mediterranean dishes served in a relaxed, traditional rustic restaurant open since 1981.</p>
-            <br />
-            <h4>Read a recent review!</h4>
-            <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d5815884-Reviews-IL_Funghetto_Spaghetteria_Pizzeria-London_England.html" target="_blank">4-star taste, 1-star price</a>
+
+            <!-- Main body -->
+            <div class="row">
+                <section>
+                    <article id="about">
+                        <div class="col-lg-2 col-md">
+                            <img style="float:left; margin-right: 10px; margin-top: 40px; margin-bottom: 60px;" src="images/restaurant.jpg" alt="Picture of Zino's Italiano"  width="300">
+                        </div>
+                        <div class="col-lg-12 col-md">
+                            <h4>About us</h4>
+                            <p>Zino Di Landro first opened for business in 1981, serving traditional Italian food and wine to an ever increasing and loyal clientele who knew him for his genuine warmth and friendly nature.
+                                Today, Zino’s son, Daniel and his wife Martha continue to run the restaurant with the same spirit of conviviality that has made this a favourite destination for so many diners over the past thirty four years.
+                                We try to concentrate on providing the best quality food and wine in a warm, friendly atmosphere, where our guests are treated just the way Zino would have liked. Serving classic Mediterranean dishes served in a relaxed, traditional rustic restaurant open since 1981.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md">
+                            <h4>Read a recent review!</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md">
+                            <a class="external-link" href="https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d5815884-Reviews-IL_Funghetto_Spaghetteria_Pizzeria-London_England.html" target="_blank">4-star taste, 1-star price</a>
+                        </div>
+                    </div>
+                    </article> 
+                </section>
+            
+            <!-- Footer -->
             <footer> 
-                <hr /> <!-- Footer Info-->
+                <hr /> 
                 <p style="text-align: center;">368 Ballards Lane Kingston London N12 7YT</p>
                 <p style="text-align: center;">02043567468</p>
                 <hr />
             </footer>
-        </body>
-    </main>
+
+            <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	    </main>
+    </body>
+    
 </html>

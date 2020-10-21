@@ -6,53 +6,126 @@ Most recent revision: 15/10/2020
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <header>
-            <title>Menu</title>
-        </header>
+        <title>Menu</title>
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	 
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            /* Page-specific formatting */
+            .container {
+                background-color: rgb(150, 160, 59);
+            }
+            caption {
+                caption-side: top;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: black;
+            }
+            th {
+                width: 93%;
+            }
+            article h4, article p, article h2{
+                text-align: center;
+            }
+            
+        </style>
     </head>
-    <main>
-        <body>
-            <h1 style="text-align:center;">Zino's Italiano</h1>
+    <body>
+        <main>
+            <!-- Header -->
+            <header>
+                <h1>Zino's Italiano</h1>
+            </header>
             <nav>
-                <hr /> <!-- Navigation Pane-->
-                <p><a href="index.html">Home</a></p>
-                <p><a href="menu.html">Menu</a></p>
-                <p><a href="contact.html">Contact Us</a></p>
+                <!-- Navigation Pane-->
+                <hr />
+                <div class="row">
+                    <div class="col-lg-4 col-md">
+                        <p><a class="btn badge-pill" href="index.html">Home</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md">
+                        <p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md">
+                        <p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+                    </div>
+                    <div class="clear-float"></div>
+                </div>
                 <hr />
             </nav>
-            <table> <!-- Main body of text -->
-                <tr>
-                    <th>King Prawn & Crayfish</th>
-                    <th>Asparagus & Pancetta Carbonara</th>
-                    <th>Lasagne</th>
-                </tr>
-                <tr>
-                    <td>Succulent king prawns and crayfish in a creamy seafood and tomato sauce with a hint of chilli, topped with a large king prawn in its shell.</td>
-                    <td>Crispy pancetta and asparagus in a velvety mascarpone and cheese sauce, topped with crispy smoked prosciutto.</td>
-                    <td>Green egg pasta sheets with beef and pork ragu, topped with creamy béchamel sauce.</td>
-                </tr>
-                <tr>
-                    <td>£13.95</td>
-                    <td>£12.75</td>
-                    <td>£10.50</td>
-                </tr>
+
+            <!-- Main body -->
             
-                <tr>
-                    <th>Penne Al Manzo Piccante</th>
-                    <th>Penne Al Pollo Della Casa</th>
-                    <th>Four Cheese Ravioli & Beef Ragu</th>
-                </tr>
-                <tr>
-                    <td>Beef and red wine ragu, beef meatballs, fresh chillies, roasted peppers and balsamic red onions, topped with mozzarella.</td>
-                    <td>Seasoned chicken breast, mushrooms and pasta baked in a creamy mushroom and white wine sauce.</td>
-                    <td>A long ravioli filled with pockets of four cheese, oven baked on top of a rich beef ragu. For the non-conformists.</td>
-                </tr>
-                <tr>
-                    <td>£11.25</td>
-                    <td>£11.95</td>
-                    <td>£13.50</td>
-                </tr>
-            </table>
+                <div class="container">
+                    <article>
+                        <div class="row">
+                            <div class="col-lg">
+                                <h2><strong>Menu</strong></h2>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-lg-4 col-md">
+                                <h4>King Prawn & Crayfish</h4>
+                                <p>Succulent king prawns and crayfish in a creamy seafood and tomato sauce with a hint of chilli, topped with a large king prawn in its shell.</p>
+                                <p>£13.95</p>
+                            </div>    
+                            <div class="col-lg-4 col-md">
+                                <h4>Asparagus & Pancetta Carbonara</h4>
+                                <p>Crispy pancetta and asparagus in a velvety mascarpone and cheese sauce, topped with crispy smoked prosciutto.</p>
+                                <p>£12.75</p>
+                            </div>
+                            <div class="col-lg-4 col-md">
+                                <h4>Lasagne</h4>
+                                <p>Green egg pasta sheets with beef and pork ragu, topped with creamy béchamel sauce.</p>
+                                <p>£10.50</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 col-md">
+                                <h4>Penne Al Manzo Piccante</h4>
+                                <p>Beef and red wine ragu, beef meatballs, fresh chillies, roasted peppers and balsamic red onions, topped with mozzarella.</p>
+                                <p>£11.25</p>
+                            </div>
+                            <div class="col-lg-4 col-md">
+                                <h4>Penne Al Pollo Della Casa</h4>
+                                <p>Seasoned chicken breast, mushrooms and pasta baked in a creamy mushroom and white wine sauce.</p>
+                                <p>£11.95</p>
+                            </div>
+                            <div class="col-lg-4 col-md">
+                                <h4>Four Cheese Ravioli & Beef Ragu</h4>
+                                <p>A long ravioli filled with pockets of four cheese, oven baked on top of a rich beef ragu. For the non-conformists.</p>
+                                <p>£13.50</p>
+                            </div>
+                        </div>
+
+                    </article>
+                    <table>
+                        <caption>Beverages</caption>
+                        
+                        <tbody>
+                            <tr>
+                                <th>Root Beer</th>
+                                <td>£3.00</td>
+                            </tr>
+                            <tr>
+                                <th>Bottled Water</th>
+                                <td>£1.25</td>
+                            </tr>
+                            <tr>
+                                <th>Lemonade</th>
+                                <td>£1.00</td>
+                            </tr>
+                            <tr>
+                                <th>Iced Tea</th>
+                                <td>£1.25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            
+            <!-- Footer -->
 
             <footer>
                 <hr />
@@ -60,6 +133,11 @@ Most recent revision: 15/10/2020
                 <p style="text-align: center;">02043567468</p>
                 <hr />
             </footer>
-        </body>
-    </main>
+            <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+        </main>
+    </body>
 </html>
