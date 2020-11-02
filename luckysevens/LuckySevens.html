@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lucky Sevens</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Lucky Sevens</h1>
+        <form name="luckySevens" class="needs-validation" onsubmit="return validate();" onreset="resetView();" novalidate>
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="startingBet">Starting Bet:</label>
+                    <input type="number" class="form-control" id="startingBet" placeholder="£0" required />
+                    <div class="invalid-feedback">
+                        Starting bet is required and must be greater than 0.
+                    </div>
+                </div>
+                <!-- end .form-group -->
+            </div>
+            <!-- end .form-row -->
+
+            <div class="form-row">
+                <div class="form-group col">
+                    <button  type="submit" id="submitButton" class="btn btn-primary">Play</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </div>
+            <!-- end .form-row -->
+        </form>
+
+        <table id="results" class="table table-striped center" style="display: none;">
+            <hr />
+            <caption style="caption-side: top; text-align: center; font-size: large;">Results</caption>
+            <tbody>
+                <tr>
+                    <td>Starting Bet</td>
+                    <td>£<span id="money"></span></td>
+                </tr>
+                <tr>
+                    <td>Total Rolls Before Going Broke</td>
+                    <td><span id="rolls"></span></td>
+                </tr>
+                <tr>
+                    <td>Highest Amount Won</td>
+                    <td>£<span id="maxMoney"></span></td>
+                </tr>
+                <tr>
+                    <td>Roll Count at Highest Amount Won</td>
+                    <td><span id="rollsAtMaxMoney"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end .container -->
+
+    <script type="text/javascript" src="LuckySevens.js"></script>
+</body>
+
+</html>
